@@ -18,4 +18,4 @@ src/
 │   └── favouritesReducer.js   # useReducer logic with LocalStorage persistence
 ├── App.jsx                    # Main UI, Search logic, and Responsive Grid
 ├── index.css                  # Tailwind imports and Custom Spinner CSS
-└── main.jsx                   # Entry point
+└── main.jsx                   
