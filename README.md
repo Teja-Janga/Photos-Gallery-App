@@ -1,16 +1,21 @@
-# React + Vite
+# Photo Gallery Web App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application that fetches images from the Picsum API, featuring a real-time search filter and a persistent favourites system.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
+- **Framework:** React (Vite)
+- **Styling:** Tailwind CSS
+- **State Management:** useReducer (for Favorites)
+- **Hooks:** useMemo, useCallback
+- **API:** Picsum Photos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+```text
+src/
+├── hooks/
+│   └── useFetchPhotos.js      # Custom hook for API logic & loading states
+├── reducers/
+│   └── favouritesReducer.js   # useReducer logic with LocalStorage persistence
+├── App.jsx                    # Main UI, Search logic, and Responsive Grid
+├── index.css                  # Tailwind imports and Custom Spinner CSS
+└── main.jsx                   # Entry point
